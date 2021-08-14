@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Max CX</title>
+    <link rel="stylesheet" href="index.css">
+    <script type="text/javascript">
+        
+        let left=1;
+        let right=3;
+        function myFunction(x) {    
+        if (x.matches) { // If media query matches
+            right=1;
+        }
+        else{
+            right=3;
+        } 
+        }
+
+
+        var x = window.matchMedia("(max-width: 1100px)")
+        myFunction(x) // Call listener function at run time
+        x.addListener(myFunction);
+        function show()
+        {
+            for(i=left;i<=right;i++){
+                document.getElementById("c"+i).style.display="inline-block";
+            }
+            
+        }
+        
+        function moveLeft(){
+            // document.getElementById("left-button").style['background-color']="rgba(245, 56, 56, 1)";
+            // document.getElementById("left-button").style['color']="rgba(255, 255, 255, 1)";
+            // document.getElementById("right-button").style['background-color']="transparent";
+            // document.getElementById("right-button").style['color']="rgba(245, 56, 56, 1)";
+            if(left>1&&right<=4){
+                document.getElementById("c"+right).style.display="none";
+                document.getElementById("c"+left).style.borderColor="#DDDDDD";
+
+                    left-=1;
+                    right-=1;
+                for(i=left;i<=right;i++){
+                    document.getElementById("c"+i).style.display="inline-block";
+                }
+                
+             }
+            else 
+            return ; 
+        }
+        function moveRight(){
+            // document.getElementById("right-button").style['background-color']="rgba(245, 56, 56, 1)";
+            // document.getElementById("right-button").style['color']="rgba(255, 255, 255, 1)";
+            // document.getElementById("left-button").style['background-color']="transparent";
+            // document.getElementById("left-button").style['color']="rgba(245, 56, 56, 1)";
+
+            if(left>=1&&right<4){
+                document.getElementById("c"+left).style.display="none";
+                    left+=1;
+                    right+=1;
+                    document.getElementById("c"+left).style.border="2px solid #F53838";
+                for(i=left;i<=right;i++){
+                    document.getElementById("c"+i).style.display="inline-block";
+                    
+                }
+                console.log(left);
+             }
+            else 
+            return ; 
+        }    
+    </script>  
+
+
+</head>
+<body  onload="show()">
+    
+    <section id="navbar" class="nav">
+        <div id="logo">
+            <img id ="logo" src="./images/Logo.svg">
+        </div>
+        <div>
+            <ul id="options">
+                <li><a href="#" >About</a> </li>
+                <li><a href="#" >Features</a></li>
+                <li><a href="#" >Pricing</a></li>
+                <li><a href="#" >Testimonials</a></li>
+                <li><a href="#" >Help</a></li>
+            </ul>
+        </div>
+        <div>
+            <ul id="Signin-panel">
+                <li><a  style="color: #0B132A;"href="#" >Sign In</a> </li>
+                <li id="abc"  ><a style="color:  #F53855;"href="#" >Sign Up</a></li>
+            </ul>    
+        </div>       
+    </section>
+    <section id="section2">
+        <div id="Heading">
+            <p id="hh">
+                Want anything to be easy with Max<strong>CX.</strong>
+            </p>    
+            <p style="margin-top:20px;">
+                Provide an experience for all your customers’
+                needs with ease and fun with <strong>MaxCX.</strong> Discover interesting features from us.
+            </p>
+            <button id="Getstarted">
+                Get Started
+                <span style="position: absolute;width: 211.83px;top:15px;left:19px;height: 60px;background: rgba(245, 56, 56, 0.35);filter: blur(54px);border-radius: 10px;">
+                </span>
+            </button>
+        </div>
+        <div>
+            <img  id="illustraton"src="./images/ImageIlustration.svg" >      
+        </div>
+    </section>
+    <section id="section3">
+        <div id="icons-panel">
+            <span style="display: flex;">
+                    <img src="./images/icon-user.svg">
+                    <span style="margin-left:0.5em;">
+                        <p class="icons-title">
+                            90K+
+                        </p>
+                        <p class="icons-title-subhead">
+                            Satisfied <br> Customers
+                        </p>       
+                    </span>
+            </span>
+            <div class="vline">
+
+            </div> 
+            <span style="display: flex;">
+                <img src="./images/icon-location.svg">
+                <span style="margin-left:0.5em;">
+                    <p class="icons-title">
+                        100+
+                    </p>
+                    <p class="icons-title-subhead">
+                        Blooming <br> Companies
+                    </p>       
+                </span>
+            </span>
+            <div class="vline">
+
+            </div>
+            <span style="display: flex;">
+                <img src="./images/icon-server.svg">
+                <span style="margin-left:0.5em;">
+                    <p class="icons-title">
+                        500+
+                    </p>
+                    <p class="icons-title-subhead">
+                        Support<br> Specialists
+                    </p>       
+                </span>
+            </span>
+            <div id="icons-panel-blur-rectangle">   
+            </div> 
+        </div>
+    </section>
+    <section id="section4">
+        <div>
+            <img  id="illustraton2" src="./images/ImageIlustration2.svg" >      
+        </div>
+        <div style="margin:1em;">
+            <p id="p1">
+                We Provide Many Features You Can Use
+            </p>
+            <p id="p2">
+                You can explore the features that we provide with fun and have their own functions each feature.
+            </p>
+            <span id="p3">
+                <ul>
+                    <li >Coffee</li>
+                    <li>Tea</li>
+                    <li>Coca Cola</li>
+                </ul>
+            </span>    
+        </div>    
+    </section>
+    <section id="section5">
+        <div>
+            <p id="p1">
+                Choose Your Plan
+            </p>
+            <p id="p2">
+                Let's choose the package that is best for you and explore it happily and cheerfully.
+            </p>        
+        </div>
+        <div id="panel-container">
+            <div id="panel1">
+                <img src="./images/panel-box.svg" style="width: 144.9px;height: 165.37px;margin-top: 1px;">
+                <p id="p1">
+                    Free Plan
+                </p>    
+                <ul>
+                    <li >10 Inbound leads/pm</li>
+                    <li>10 workflow steps</li>
+                    <li>Unlimited usage</li>
+                    <li>Daily Stats & updates</li>
+                </ul>
+                <span id="span1">
+                    <p id="p2">
+                        Free
+                    </p>
+                    <button id="button1">
+                        Select
+                    </button>        
+                </span>    
+            </div>
+
+            <div id="panel2">
+                <img src="./images/panel-box-2.svg" style="width: 144.9px;height: 165.37px;margin-top: 1px;">
+                <p id="p1">
+                    Standard Plan
+                </p>    
+                <ul>
+                    <li>10k Inbound leads/pm</li>
+                    <li>100 workflow steps</li>
+                    <li>Unlimited usage</li>
+                    <li>On demand Stats & updates</li>
+                    <li>Workflow Customization</li>
+                </ul>
+                <span id="span1">
+                    <p id="p2" >
+                        $9 <span style="color: rgba(79, 86, 101, 1);">/mo</span>
+                    </p>
+                    <button id="button1">
+                        Select
+                    </button>        
+                </span>    
+            </div>
+            <div id="panel3" style="border: 2px solid #F53838;">
+                <img src="./images/panel-box-3.svg" style="width: 144.9px;height: 165.37px;margin-top: 1px;">
+                <p id="p1">
+                    Standard Plan
+                </p>    
+                <ul>
+                    <li>10k Inbound leads/pm</li>
+                    <li>100 workflow steps</li>
+                    <li>Unlimited usage</li>
+                    <li>On demand Stats & updates</li>
+                    <li>Workflow Customization</li>
+                </ul>
+                <span id="span1">
+                    <p id="p2" >
+                        $12 <span style="color: rgba(79, 86, 101, 1);">/mo</span>
+                    </p>
+                    <button id="button1" >
+                        Select
+                    </button>        
+                </span>    
+            </div>           
+        </div>    
+    </section>  
+    <section id="section6">
+        <p id="p1">
+            Huge Global Network of Specialized Workforce    
+        </p>  
+        <p id="p2">
+            See MaxCX everywhere to make it easier for you for your customers around the globe.
+        </p>
+        <img src="./images/World-map.svg"  id="globalmap">
+        <div id="socialmedia-panel">
+            <img src="./images/social-netflix.svg" class="social-images">
+            <img src="./images/social-reddit.svg" class="social-images">
+            <img src="./images/social-amazon.svg" class="social-images">
+            <img src="./images/social-discord.svg" class="social-images">
+            <img src="./images/social-spotify.svg" class="social-images">
+        </div>
+        <p id="p3">
+            Trusted by Thousands of Happy Customer
+        </p>
+        <p id="p4">
+            These are the stories of our customers who have joined us with great pleasure when using this crazy feature.
+        </p>                      
+    </section>
+    <section id="section7">    
+        <div class="parent">
+            <div>
+                <button id="left-button" onclick="moveLeft()">
+                    &lt;
+                </button>    
+            </div>
+            <div class="child" id="c1" style=" border: 2px solid #F53838;">
+                <span style="display: flex; align-items: center; width:100%;">
+                    <img src="images/user1.svg" >
+                    <span>
+                        <p id="name">
+                            Viezh Robert
+                        </p>
+                        <p id="country">
+                            Warsaw, Poland
+                        </p>
+                    </span>
+                    <span id="rating">
+                            4.5<img  src="./images/star-rating.svg">
+                    </span>        
+                </span>
+                <p id="review">
+                    “Wow... I am very happy to use this MaxCX service, 
+                    it turned out to be more than my expectations and 
+                    so far there have been no problems. MaxCX always the best.”
+                </p>    
+            </div>
+            <div class="child" id="c2">
+                <span style="display: flex; align-items: center; width:100%;">
+                    <img src="images/user2.svg" >
+                    <span>
+                        <p id="name">
+                            Yessica Christy
+                        </p>
+                        <p id="country">
+                            Shanxi, China
+                        </p>
+                    </span>
+                    <span id="rating">
+                            4.5<img  src="./images/star-rating.svg">
+                    </span>        
+                </span>
+                <p id="review">
+                    “I like it because I’ve my userbase around the 
+                    globe and MaxCX just makes it a lot easier for 
+                    me removing all the inter-continent barriers.”
+                </p>
+            </div>
+            <div class="child" id="c3">
+                <span style="display: flex; align-items: center; width:100%;">
+                    <img src="images/user3.svg" >
+                    <span>
+                        <p id="name">
+                            Kim Young Jou
+                        </p>
+                        <p id="country">
+                            Seoul, South Korea
+                        </p>
+                    </span>
+                    <span id="rating">
+                            4.5<img  src="./images/star-rating.svg">
+                    </span>        
+                </span>
+                <p id="review">
+                    “This is very unusual for my business that 
+                    currently requires a partner that keeps my
+                    data at the highest possibe security.”.
+                </p>
+            </div>
+            <div class="child" id="c4">
+                <span style="display: flex; align-items: center; width:100%;">
+                    <img src="images/user1.svg" >
+                    <span>
+                        <p id="name">
+                            Viezh Robert
+                        </p>
+                        <p id="country">
+                            Warsaw, Poland
+                        </p>
+                    </span>
+                    <span id="rating">
+                            4.5<img  src="./images/star-rating.svg">
+                    </span>        
+                </span>
+                <p id="review">
+                    “Wow... I am very happy to use this MaxCX service, 
+                    it turned out to be more than my expectations and 
+                    so far there have been no problems. MaxCX always the best.”
+                </p>
+            </div>
+            
+      
+            <div >
+                <button id="right-button" onclick="moveRight()">
+                    &gt;
+                </button>    
+            </div>        
+        </div>
+           
+    </section>
+    <section id="section8">
+        <div id="Subscibepanel">
+            <span>
+                <p  id="Subscibep1">
+                    Subscribe Now & get Special Features!
+                </p>
+                <p id="Subscibep2">
+                    Let's subscribe with us and find the fun.
+                </p>        
+            </span>
+            <span style="position: relative; height: 86px;width:250px;">
+                <button id="subscibebutton">
+                    Subscribe
+                </button>
+                <img src="./images/subscribe-absolute.png" style=" width:100%;height:60px;position: absolute; bottom: -10px;left: 0;">
+            </span>    
+        </div>
+        <div  id="bottom-menu">
+            <div id="bottom-submenu1">
+                <img src="./images/Logo.svg">
+                <p id="p1">
+                    Max<strong>CX</strong> is a private virtual network that has unique features and has high security.
+                </p>
+                <p id="p2">
+                    <img src="./images/Facebook.svg">
+                    <img src="./images/Twitter.svg">
+                    <img src="./images/Instagram.svg">
+                </p>
+                <p id="p3" >
+                    ©2020 Max<strong>CX</strong>
+                </p>    
+            </div>
+            <div id="bottom-submenu2">
+                <div>
+                    <span id="Head">Product</span>
+                    <ul>
+                        <li>Download </li>
+                        <li>Pricing</li>
+                        <li>Locations</li>
+                        <li>Services</li>
+                        <li>Countries</li>
+                        <li>Blog</li>
+                    </ul>
+                </div>
+                <div>
+                    <span id="Head">Engage</span>
+                    <ul>
+                        <li>MaxCX ?</li>
+                        <li>FAQ</li>
+                        <li>Explore</li>
+                        <li>About Us</li>
+                        <li>Privacy Policy</li>
+                        <li>Terms of Service</li>
+                    </ul>
+                </div>
+                <div>
+                    <span id="Head">Earn Money</span>
+                    <ul>
+                        <li>Affiliate</li>
+                        <li>Become Partner</li>
+                    </ul>
+                </div>    
+            </div>    
+        </div>         
+
+    </section>                 
+</body>
+</html>
