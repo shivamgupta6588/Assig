@@ -148,7 +148,6 @@ body{
 }
 #icons-panel{   
     width: 1140px; 
-    /* border: 3px solid red; */
     display: flex;
     align-items: center; 
     justify-content: space-evenly;
@@ -313,7 +312,6 @@ body{
     height: 760px;
     border-radius: 10px;    
     background: rgba(255, 255, 255, 1);
-    /* border: 2px solid green; */
     border: 2px solid #DDDDDD;
     box-sizing: border-box;
     border-radius: 10px;
@@ -431,8 +429,6 @@ body{
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    /* justify-content: space-between; */
-
 }
 #section6 .social-images{
     width: 190px;
@@ -489,7 +485,6 @@ body{
     margin-bottom: 200px;
 }
 
-/*  */
 .parent{
     margin: 4rem auto;
     
@@ -527,7 +522,6 @@ body{
    color:rgba(255, 255, 255, 1);
   }
 
-/*  */
 .child img{
     margin-right: 18px;
 }
@@ -747,7 +741,7 @@ body{
     }
     #bottom-submenu1 {
         justify-content: center;
-        text-align: center;     
+        text-align: center;      
 
     }
     #bottom-submenu2 {
