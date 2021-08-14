@@ -750,4 +750,7 @@ body{
     #bottom-submenu1 #p2{
         justify-content: center;
     }
+    #bottom-submenu1 #p3{
+        padding-left: 0;
+    }
 }
