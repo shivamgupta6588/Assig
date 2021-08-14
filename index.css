@@ -34,7 +34,7 @@ body{
 
 #options{
     list-style: none;
-    margin:0;
+    margin:0 ;
     padding: 0;
     height: 100%;
     display: flex;
@@ -51,7 +51,7 @@ body{
     font-size: 16px;
     line-height: 19px;
     color: #4F5665;
-    margin: 0.5em;
+    margin: 0.5em 1em;
 }
 
 #Signin-panel
