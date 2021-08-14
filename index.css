@@ -115,7 +115,7 @@ body{
     position: relative; 
     margin-top:20px;
 }
-#hh{
+#Heading #p1{
     
     font-family: 'Rubik';
     font-style: normal;
@@ -124,7 +124,15 @@ body{
     line-height: 70px;
     color: #0B132A;
 }
+#Heading #p2{
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 30px;
+    color: rgba(79, 86, 101, 1);
 
+}
 #section2 #illustraton{
     width: 611.24px;
     height: 382.44px;
@@ -180,6 +188,8 @@ body{
     font-weight: normal;
     font-size: 20px;
     line-height: 30px;
+    color: rgba(79, 86, 101, 1);
+
 }
 #icons-panel-blur-rectangle{
     top:52px;
@@ -672,6 +682,7 @@ body{
     font-weight: 500;
     font-size: 16px;
     line-height: 30px;
+    color: rgba(79, 86, 101, 1);
 }
 
 
