@@ -547,8 +547,7 @@ body{
 }
 #left-button,#right-button{
     cursor: pointer;
-    
-    font-size: 26px;
+    font-size: 25px;
     display: inline-block;
     background: transparent;
     border: none;
@@ -560,7 +559,7 @@ body{
         align-items: center;
         justify-content: center;
     color:  rgba(245, 56, 56, 1);
-    font: bold;
+    text-align: center;
 }
 #left-button:hover,#right-button:hover {
    background-color: rgba(245, 56, 56, 1);
