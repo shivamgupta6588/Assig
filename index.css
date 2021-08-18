@@ -166,6 +166,7 @@ body{
 #section3{
     display: flex;
     justify-content: center; 
+    padding: 2em 0em;
 
 }
 #icons-panel{   
@@ -219,12 +220,7 @@ body{
     height: 189.22px;
 
 }
-/* #icons-panelrelative{
-    position: absolute;
-    max-width:1068.84px;
-    min-height: 189.22px;
 
-} */
 @media screen and (max-width: 640px) {
     #icons-panel{  
         width: 90vw;
