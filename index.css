@@ -1,7 +1,6 @@
     @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap');
 body{
     background-color: #FFFFFF;
-    
     margin: 0;
     padding: 0;
 }
@@ -204,6 +203,7 @@ body{
     font-size: 20px;
     line-height: 30px;
     color: rgba(79, 86, 101, 1);
+    max-width: 102px;
 
 }
 #icons-panel-blur-rectangle{
@@ -218,7 +218,7 @@ body{
     height: 189.22px       ;
 
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 640px) {
     #icons-panel{  
         width: 90vw;
         flex-direction: column;
@@ -446,6 +446,7 @@ body{
     text-align: center;
     }
 #section6 #p2{
+    max-width: 555px;
     text-align: center;
     color: rgba(11, 19, 42, 1);
     margin: 20px 0px;
@@ -523,7 +524,6 @@ body{
     margin: 0;
     padding: 0;
     min-height: 600px;
-    margin-bottom: 200px;
 }
 
 .parent{
@@ -759,6 +759,7 @@ body{
     font-size: 16px;
     line-height: 30px;
     color: rgba(79, 86, 101, 1);
+    margin: 5px 0;
 }
 #bottom-submenu2{
     display: flex; 

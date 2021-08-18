@@ -19,7 +19,6 @@
         } 
         }
 
-
         var x = window.matchMedia("(max-width: 1100px)")
         myFunction(x) // Call listener function at run time
         x.addListener(myFunction);
@@ -32,10 +31,7 @@
         }
         
         function moveLeft(){
-            // document.getElementById("left-button").style['background-color']="rgba(245, 56, 56, 1)";
-            // document.getElementById("left-button").style['color']="rgba(255, 255, 255, 1)";
-            // document.getElementById("right-button").style['background-color']="transparent";
-            // document.getElementById("right-button").style['color']="rgba(245, 56, 56, 1)";
+          
             if(left>1&&right<=4){
                 document.getElementById("c"+right).style.display="none";
                 document.getElementById("c"+left).style.borderColor="#DDDDDD";
@@ -51,11 +47,6 @@
             return ; 
         }
         function moveRight(){
-            // document.getElementById("right-button").style['background-color']="rgba(245, 56, 56, 1)";
-            // document.getElementById("right-button").style['color']="rgba(255, 255, 255, 1)";
-            // document.getElementById("left-button").style['background-color']="transparent";
-            // document.getElementById("left-button").style['color']="rgba(245, 56, 56, 1)";
-
             if(left>=1&&right<4){
                 document.getElementById("c"+left).style.display="none";
                     left+=1;
@@ -65,7 +56,6 @@
                     document.getElementById("c"+i).style.display="inline-block";
                     
                 }
-                console.log(left);
              }
             else 
             return ; 
@@ -99,7 +89,7 @@
     <section id="section2">
         <div id="Heading">
             <p id="p1">
-                Want anything to be easy with Max<strong>CX.</strong>
+                Want anything to be easy with <span style="font-weight: lighter;">Max</span><strong>CX.</strong>
             </p>    
             <p id="p2">
                 Provide an experience for all your customers’
@@ -124,7 +114,7 @@
                             90K+
                         </p>
                         <p class="icons-title-subhead">
-                            Satisfied <br> Customers
+                            Satisfied  Customers
                         </p>       
                     </span>
             </span>
@@ -138,7 +128,7 @@
                         100+
                     </p>
                     <p class="icons-title-subhead">
-                        Blooming <br> Companies
+                        Blooming  Companies
                     </p>       
                 </span>
             </span>
@@ -152,7 +142,7 @@
                         500+
                     </p>
                     <p class="icons-title-subhead">
-                        Support<br> Specialists
+                        Support Specialists
                     </p>       
                 </span>
             </span>
@@ -238,11 +228,12 @@
                    Premium Plan
                 </p>    
                 <ul>
-                    <li>10k Inbound leads/pm</li>
-                    <li>100 workflow steps</li>
+                    <li>Unlimited Inbound leads</li>
+                    <li>Unlimited workflow steps</li>
                     <li>Unlimited usage</li>
-                    <li>On demand Stats & updates</li>
+                    <li>Realtime Stats & updates</li>
                     <li>Workflow Customization</li>
+                    <li>Hooks for Manual steps</li>
                 </ul>
                 <span id="span1">
                     <p id="p2" >
@@ -374,13 +365,12 @@
             </div>
             
       
-            <div >
+            <div>
                 <button id="right-button" onclick="moveRight()">
                     &#11166;
                 </button>    
             </div>        
-        </div>
-           
+        </div>      
     </section>
     <section id="section8">
         <div id="Subscibepanel">
@@ -403,7 +393,8 @@
             <div id="bottom-submenu1">
                 <img src="./images/Logo.svg">
                 <p id="p1">
-                    Max<strong>CX</strong> is a private virtual network that has unique features and has high security.
+                    Max<strong>CX</strong> 
+                    <span style="font-weight: lighter;">is a private virtual network that has unique features and has high security.</span>
                 </p>
                 <p id="p2">
                     <img src="./images/Facebook.svg">
@@ -446,7 +437,6 @@
                 </div>    
             </div>    
         </div>         
-
     </section>                 
 </body>
 </html>
